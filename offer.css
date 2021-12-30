@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --blue: rgb(215, 244, 248);
+    --red: rgb(243, 78, 56);
+    --light-blue: rgb(237, 250, 252);
+    --light-blue-opacity: rgba(221, 221, 221, 0.9);
+    --dark: rgb(49, 49, 49);
+    --font-family-dancing: dancing script, sans-serif;
+    --font-family-roboto: roboto slab, sans-serif;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    height: 6rem;
+    background-color: var(--blue);
+    align-items: center;
+    position: fixed;
+    width: 100%;
+  }
+  
+  header a {
+    text-decoration: none;
+    color: black;
+  }
+  header ul {
+    list-style: none;
+    display: flex;
+    font-size: 1.7rem;
+    font-family: dancing script, sans-serif;
+  }
+  
+  header ul li {
+    margin-right: 2rem;
+    padding-right: 1rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  .page-logo {
+    font-size: 3rem;
+    margin-left: 3rem;
+    font-weight: 700;
+    font-family: roboto slab, sans-serif;
+  }
+  
+  .home-btn {
+    color: var(--red);
+  }
+  .menu-btn:hover {
+    color: var(--red);
+  }
+  
+   main {
+    background-color:var(--light-blue);
+  }
+  
+.behind-nav {
+    width: 100%;
+    height: 6rem;
+}  
+   #portfolio-link {
+     width: 80%;
+     margin: auto;
+     text-align: center;
+     padding-bottom: 6rem;
+    }
+   
+  
+   #portfolio-link a {
+     text-decoration: none;
+     font-family: var(--font-family-dancing);
+     font-size: 5rem;
+     color: var(--red);
+     background-color: var(--blue);
+     border-radius: 4px;
+     padding: 0.5rem;
+     margin: 0.5rem;
+   }
+  
+   #portfolio-link a:hover {
+     color: var(--blue);
+     background-color: var(--red);
+     transition: ease-in 0.7s;
+   }
+  
+  
+   footer {
+    background-color: var(--dark);
+    height: 100%;
+  
+   }
+  
+    .footerul{
+      display: flex;
+      list-style: none;
+      height: 100%;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      padding-top: 2rem;
+     }
+  
+    .footer-btn {
+      font-size: 1.7rem;
+      font-family: var(--font-family-roboto);
+      text-decoration: none;
+      color: var(--blue);
+      margin: 2rem;
+      }
+  
+      .home-btn {
+        color: var(--red);
+      }
+  
+      .contact-details-footer {
+        color: var(--blue);
+        justify-content: center;
+        display: flex;
+        padding: 2rem 0 2rem 0;
+      }
+  
+      .contact-details-footer p {
+        margin: 1rem;
+        font-family: var(--font-family-roboto);
+        font-size: 1.5rem;
+      }
+  
