@@ -128,5 +128,95 @@
         font-family: var(--font-family-roboto);
         font-size: 1.5rem;
       }
+
+      @media (max-width: 768px) {
+        body {
+           width: 100%;
+        }
+        header {
+          width: 100%;
+          position: fixed;
+        }      
+        .page-logo {
+          font-size: 1.2rem;
+        }
+        header ul li {
+          font-size: 1.1rem;
+        }
+  
+        #highlights-ul {
+          flex-direction: column;
+        }
+        #portfolio-link a {
+          font-size: 2rem;
+        }
+        .footer-btn {
+          font-size: 1.2rem;
+        }      
+        .contact-details-footer p {
+          font-size: 1.2rem;
+        }
+      }
+      @media (max-width: 375px) {
+        body {
+          width: 100%;
+        }
+        header {
+          width: 100%;
+          position: fixed;
+          flex-direction: column;
+          justify-content: center;
+        }
+        .page-logo {
+          font-size: 1.2rem;
+          margin: auto;
+        }
+        header ul li {
+          font-size: 0.7rem;
+          padding-bottom: 1rem;
+          margin: auto;
+        }
+        #image-container {
+          height: 50rem;
+        }
+        .image-container-text h1 {
+          font-size: 4rem;
+        }
+        .image-container-text h2 {
+          font-size: 2rem;
+        }
+        .affordable-photography h3 {
+          font-size: 2rem;
+          margin-top: 1rem;
+        }
+        .affordable-photography p {
+          font-size: 1rem;
+        }
+        #highlights-ul {
+          flex-direction: column;
+        }
+        #highlights h2 {
+          font-size: 3rem;
+          margin: 1rem auto;
+        }
+        .highlights img {
+          height: 200px;
+        }
+        #highlights-ul p {
+          font-size: 1rem;
+        }
+        #portfolio-link a {
+          font-size: 1.7rem;
+        }
+        .footer-btn {
+          font-size: 1rem;
+          margin: 0.4rem;
+        }
+        .contact-details-footer p {
+          font-size: 1rem;
+          margin: 0.4rem;
+        }  
+      }
+      
   
   
