@@ -1,221 +1,304 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  :root {
-    --blue: rgb(215, 244, 248);
-    --red: rgb(243, 78, 56);
-    --light-blue: rgb(237, 250, 252);
-    --light-blue-opacity: rgba(221, 221, 221, 0.9);
-    --dark: rgb(49, 49, 49);
-    --font-family-dancing: dancing script, sans-serif;
-    --font-family-roboto: roboto slab, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: rgb(215, 244, 248);
+  --red: rgb(243, 78, 56);
+  --light-blue: rgb(237, 250, 252);
+  --light-blue-opacity: rgba(221, 221, 221, 0.9);
+  --dark: rgb(49, 49, 49);
+  --font-family-dancing: dancing script, sans-serif;
+  --font-family-roboto: roboto slab, sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 6rem;
+  background-color: var(--blue);
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  font-size: 1.7rem;
+  font-family: dancing script, sans-serif;
+}
+
+header ul li {
+  margin-right: 2rem;
+  padding-right: 1rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.page-logo {
+  font-size: 3rem;
+  margin-left: 3rem;
+  font-weight: 700;
+  font-family: roboto slab, sans-serif;
+}
+
+.home-btn {
+  color: var(--red);
+}
+.menu-btn:hover {
+  color: var(--red);
+}
+
+main {
+  background-color: var(--light-blue);
+}
+
+.behind-nav {
+  width: 100%;
+  height: 6rem;
+}
+
+.pagetext-content h1 {
+  font-family: var(--font-family-dancing);
+  text-align: center;
+  font-size: 3rem;
+  color: var(--red);
+  padding-top: 2rem;
+}
+.pagetext-content h3 {
+  font-family: var(--font-family-roboto);
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 2rem;
+}
+/* Images Grid Styling*/
+
+.images img:hover {
+  opacity: 0.7;
+}
+
+.flex-grid .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.flex-grid .column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.images img {
+  width: 100%;
+  padding: 7px;
+}
+
+footer {
+  background-color: var(--dark);
+  height: 100%;
+}
+
+.br-line {
+  width: 80%;
+  margin: 4rem auto;
+  border-top: 1px solid var(--red);
+  padding-bottom: 3rem;
+}
+
+.footerul {
+  display: flex;
+  list-style: none;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.footer-btn {
+  font-size: 1.7rem;
+  font-family: var(--font-family-roboto);
+  text-decoration: none;
+  color: var(--blue);
+  margin: 2rem;
+}
+
+.home-btn {
+  color: var(--red);
+}
+
+.contact-details-footer {
+  color: var(--blue);
+  justify-content: center;
+  display: flex;
+  padding: 2rem 0 2rem 0;
+}
+
+.contact-details-footer p {
+  margin: 1rem;
+  font-family: var(--font-family-roboto);
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1950px) {
+  body {
+    width: 100%;
   }
   header {
-    display: flex;
-    justify-content: space-between;
-    height: 6rem;
-    background-color: var(--blue);
-    align-items: center;
-    position: fixed;
     width: 100%;
-  }
-  
-  header a {
-    text-decoration: none;
-    color: black;
-  }
-  header ul {
-    list-style: none;
-    display: flex;
-    font-size: 1.7rem;
-    font-family: dancing script, sans-serif;
-  }
-  
-  header ul li {
-    margin-right: 2rem;
-    padding-right: 1rem;
-    font-size: 1.8rem;
-    font-weight: 700;
+    position: fixed;
   }
   .page-logo {
-    font-size: 3rem;
-    margin-left: 3rem;
-    font-weight: 700;
-    font-family: roboto slab, sans-serif;
+    font-size: 1.2rem;
   }
-  
-  .home-btn {
-    color: var(--red);
+  header ul li {
+    font-size: 1.1rem;
   }
-  .menu-btn:hover {
-    color: var(--red);
-  }
-  
-   main {
-    background-color:var(--light-blue);
-  }
-  
-.behind-nav {
-    width: 100%;
-    height: 6rem;
-}  
-   #portfolio-link {
-     width: 80%;
-     margin: auto;
-     text-align: center;
-     padding-bottom: 6rem;
-    }
-   
-  
-   #portfolio-link a {
-     text-decoration: none;
-     font-family: var(--font-family-dancing);
-     font-size: 5rem;
-     color: var(--red);
-     background-color: var(--blue);
-     border-radius: 4px;
-     padding: 0.5rem;
-     margin: 0.5rem;
-   }
-  
-   #portfolio-link a:hover {
-     color: var(--blue);
-     background-color: var(--red);
-     transition: ease-in 0.7s;
-   }
-  
-  
-   footer {
-    background-color: var(--dark);
-    height: 100%;
-  
-   }
-  
-    .footerul{
-      display: flex;
-      list-style: none;
-      height: 100%;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-      padding-top: 2rem;
-     }
-  
-    .footer-btn {
-      font-size: 1.7rem;
-      font-family: var(--font-family-roboto);
-      text-decoration: none;
-      color: var(--blue);
-      margin: 2rem;
-      }
-  
-      .home-btn {
-        color: var(--red);
-      }
-  
-      .contact-details-footer {
-        color: var(--blue);
-        justify-content: center;
-        display: flex;
-        padding: 2rem 0 2rem 0;
-      }
-  
-      .contact-details-footer p {
-        margin: 1rem;
-        font-family: var(--font-family-roboto);
-        font-size: 1.5rem;
-      }
 
-      @media (max-width: 768px) {
-        body {
-           width: 100%;
-        }
-        header {
-          width: 100%;
-          position: fixed;
-        }      
-        .page-logo {
-          font-size: 1.2rem;
-        }
-        header ul li {
-          font-size: 1.1rem;
-        }
-  
-        #highlights-ul {
-          flex-direction: column;
-        }
-        #portfolio-link a {
-          font-size: 2rem;
-        }
-        .footer-btn {
-          font-size: 1.2rem;
-        }      
-        .contact-details-footer p {
-          font-size: 1.2rem;
-        }
-      }
-      @media (max-width: 375px) {
-        body {
-          width: 100%;
-        }
-        header {
-          width: 100%;
-          position: fixed;
-          flex-direction: column;
-          justify-content: center;
-        }
-        .page-logo {
-          font-size: 1.2rem;
-          margin: auto;
-        }
-        header ul li {
-          font-size: 0.7rem;
-          padding-bottom: 1rem;
-          margin: auto;
-        }
-        #image-container {
-          height: 50rem;
-        }
-        .image-container-text h1 {
-          font-size: 4rem;
-        }
-        .image-container-text h2 {
-          font-size: 2rem;
-        }
-        .affordable-photography h3 {
-          font-size: 2rem;
-          margin-top: 1rem;
-        }
-        .affordable-photography p {
-          font-size: 1rem;
-        }
-        #highlights-ul {
-          flex-direction: column;
-        }
-        #highlights h2 {
-          font-size: 3rem;
-          margin: 1rem auto;
-        }
-        .highlights img {
-          height: 200px;
-        }
-        #highlights-ul p {
-          font-size: 1rem;
-        }
-        #portfolio-link a {
-          font-size: 1.7rem;
-        }
-        .footer-btn {
-          font-size: 1rem;
-          margin: 0.4rem;
-        }
-        .contact-details-footer p {
-          font-size: 1rem;
-          margin: 0.4rem;
-        }  
-      }
-      
-  
+  .first-section h1 {
+    font-size: 2.5rem;
+  }
+  .first-section h2 {
+    font-size: 1.5rem;
+  }
+  .first-section p {
+    font-size: 1rem;
+  }
+
+  #highlights-ul {
+    flex-direction: column;
+  }
+  #highlights h2 {
+    font-size: 3rem;
+    margin: 1rem auto;
+  }
+  .highlights img {
+    height: 350px;
+  }
+  #highlights-ul p {
+    font-size: 1rem;
+  }
+  #highlights-ul {
+    flex-direction: column;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  form h2 {
+    font-size: 1.2rem;
+  }
+  .inline-control,
+  .inline-control input {
+    font-size: 1.2rem;
+  }
+  #contact-details h2 {
+    font-size: 1.5rem;
+  }
+  #contact-details h2 strong {
+    font-size: 1.5rem;
+  }
+
+  .footer-btn {
+    font-size: 1rem;
+  }
+  .contact-details-footer p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+  header {
+    width: 100%;
+    position: fixed;
+  }
+  .page-logo {
+    font-size: 1.2rem;
+  }
+  header ul li {
+    font-size: 1.1rem;
+  }
+
+  #highlights-ul {
+    flex-direction: column;
+  }
+  #portfolio-link a {
+    font-size: 2rem;
+  }
+  .footer-btn {
+    font-size: 1.2rem;
+  }
+  .contact-details-footer p {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 375px) {
+  body {
+    width: 100%;
+  }
+  header {
+    width: 100%;
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .page-logo {
+    font-size: 1.2rem;
+    margin: auto;
+  }
+  header ul li {
+    font-size: 0.7rem;
+    padding-bottom: 1rem;
+    margin: auto;
+  }
+  #image-container {
+    height: 50rem;
+  }
+  .image-container-text h1 {
+    font-size: 4rem;
+  }
+  .image-container-text h2 {
+    font-size: 2rem;
+  }
+  .affordable-photography h3 {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+  .affordable-photography p {
+    font-size: 1rem;
+  }
+  #highlights-ul {
+    flex-direction: column;
+  }
+  #highlights h2 {
+    font-size: 3rem;
+    margin: 1rem auto;
+  }
+  .highlights img {
+    height: 200px;
+  }
+  #highlights-ul p {
+    font-size: 1rem;
+  }
+  #portfolio-link a {
+    font-size: 1.7rem;
+  }
+  .footer-btn {
+    font-size: 1rem;
+    margin: 0.4rem;
+  }
+  .contact-details-footer p {
+    font-size: 1rem;
+    margin: 0.4rem;
+  }
+}

@@ -72,14 +72,14 @@ main {
 
 .first-section h1 {
   font-family: var(--font-family-dancing);
-  font-size: 5rem;
+  font-size: 4rem;
   color: var(--red);
   margin: 2rem auto;
 }
 
 .first-section h2 {
   font-family: var(--font-family-roboto);
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: var(--dark);
   margin: 1rem auto;
 }
@@ -203,17 +203,17 @@ footer {
 }
 
 #contact-details h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: var(--font-family-roboto);
 }
 #contact-details h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: var(--font-family-roboto);
   padding: 2rem 0;
 }
 #contact-details h2 strong {
   color: var(--red);
-  font-size: 3rem;
+  font-size: 2rem;
 }
 #contact-details h3 strong {
   color: var(--red);
@@ -256,6 +256,57 @@ footer {
   font-size: 1.5rem;
 }
 
+@media screen and (max-width: 1950px) {
+  body {
+    width: 100%;
+  }
+  header {
+    width: 100%;
+    position: fixed;
+    margin: auto;
+  }
+  .page-logo {
+    font-size: 1.2rem;
+  }
+  header ul li {
+    font-size: 1.1rem;
+  }
+
+  .first-section h1 {
+    font-size: 2.5rem;
+  }
+  .first-section h2 {
+    font-size: 1.5rem;
+  }
+  .first-section p{
+    font-size: 1rem;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  form h2 {
+    font-size: 1.2rem;
+  }
+  .inline-control, .inline-control input {
+    font-size: 1.2rem;
+  }
+  #contact-details h2 {
+    font-size: 1.7rem;
+  }
+  #contact-details h2 strong {
+    font-size: 1.5rem;
+  }
+
+  .footer-btn {
+    font-size: 1rem;
+  }
+  .contact-details-footer p {
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 768px) {
   body {
     width: 100%;
@@ -292,10 +343,10 @@ footer {
     font-size: 1.5rem;
   }
   #contact-details h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   #contact-details h2 strong {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .footer-btn {
@@ -374,7 +425,7 @@ footer {
     font-size: 2rem;
   }
   .affordable-photography h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-top: 1rem;
   }
   .affordable-photography p {
@@ -394,7 +445,7 @@ footer {
     font-size: 1rem;
   }
   #portfolio-link a {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
   .footer-btn {
     font-size: 1rem;

@@ -66,6 +66,7 @@ header ul li {
 
 #image-container {
   height: 60rem;
+  width: 100%;
   background-color: var(--light-blue);
   background-image: url("/images/affordable_photographer_london.jpg");
   background-position: center;
@@ -90,13 +91,13 @@ header ul li {
   font-family: var(--font-family-dancing);
   text-shadow: 1px 1px black;
   color: var(--red);
-  font-size: 6rem;
+  font-size: 5rem;
   margin-bottom: 4rem;
-  padding-top: 10rem;
+  padding-top: 15rem;
 }
 .image-container-text h2 {
   font-family: var(--font-family-dancing);
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-shadow: 1px 1px var(--light-blue-opacity);
   margin-bottom: 2rem;
   padding-top: 3rem;
@@ -195,7 +196,7 @@ header ul li {
 #portfolio-link a {
   text-decoration: none;
   font-family: var(--font-family-dancing);
-  font-size: 5rem;
+  font-size: 3rem;
   color: var(--red);
   background-color: var(--blue);
   border-radius: 4px;
@@ -249,6 +250,76 @@ footer {
   font-size: 1.5rem;
 }
 
+@media screen and (max-width: 1950px) {
+  body {
+    width: 100%;
+  }
+  header {
+    width: 100%;
+    position: fixed;
+    }
+  .page-logo {
+    font-size: 1.2rem;
+  }
+  header ul li {
+    font-size: 1.1rem;
+  }
+
+  .first-section h1 {
+    font-size: 2.5rem;
+  }
+  .first-section h2 {
+    font-size: 1.5rem;
+  }
+  .first-section p{
+    font-size: 1rem;
+  }
+
+  #highlights-ul {
+    flex-direction: column;
+  }
+  #highlights h2 {
+    font-size: 3rem;
+    margin: 1rem auto;
+  }
+  .highlights img {
+    height: 350px;
+  }
+  #highlights-ul p {
+    font-size: 1rem;
+  }
+  #highlights-ul {
+    flex-direction: column;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  form h2 {
+    font-size: 1.2rem;
+  }
+  .inline-control, .inline-control input {
+    font-size: 1.2rem;
+  }
+  #contact-details h2 {
+    font-size: 1.5rem;
+  }
+  #contact-details h2 strong {
+    font-size: 1.5rem;
+  }
+
+  .footer-btn {
+    font-size: 1rem;
+  }
+  .contact-details-footer p {
+    font-size: 1rem;
+  }
+}
+
+
+
+
 @media (max-width: 768px) {
   body {
     width: 100%;
@@ -263,7 +334,19 @@ footer {
   header ul li {
     font-size: 1.1rem;
   }
-
+  #highlights-ul {
+    flex-direction: column;
+  }
+  #highlights h2 {
+    font-size: 3rem;
+    margin: 1rem auto;
+  }
+  .highlights img {
+    height: 300px;
+  }
+  #highlights-ul p {
+    font-size: 1rem;
+  }
   #highlights-ul {
     flex-direction: column;
   }
