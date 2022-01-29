@@ -106,7 +106,7 @@ header ul li {
   font-family: var(--font-family-roboto);
   font-size: 1rem;
   padding: 0.4rem;
-  padding-bottom: 1rem;
+  padding-bottom: rem;
   text-decoration: none;
   text-shadow: 0.2px 0.2px black;
   color: var(--blue);
@@ -115,6 +115,7 @@ header ul li {
 }
 .link-image {
   margin-bottom: 1rem;
+  margin-top: 5rem;
 }
 .image-container-text a:hover {
   background-color: var(--blue);
@@ -227,7 +228,7 @@ footer {
 }
 
 .footer-btn {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-family: var(--font-family-roboto);
   text-decoration: none;
   color: var(--blue);
@@ -248,7 +249,7 @@ footer {
 .contact-details-footer p {
   margin: 1rem;
   font-family: var(--font-family-roboto);
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 /* @media screen and (max-width: 1950px) {
@@ -327,10 +328,20 @@ footer {
   }
   .page-logo {
     font-size: 1rem;
+    width: 70%;
+    margin:0;
+    padding-left: 0.5rem;
+    justify-content: center;
   }
   header ul li {
     font-size: 1rem;
+    margin-right: 0.5rem;
+    padding-right: 0.5rem;
   }
+  .last-menu-btn {
+    padding-right: 0.5rem;
+  }
+
   #highlights-ul {
     /* flex-direction: column; */
   }

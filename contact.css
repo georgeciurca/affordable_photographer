@@ -23,6 +23,16 @@ header {
   width: 100%;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+  background-color: var(--blue);
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+
 header a {
   text-decoration: none;
   color: black;
@@ -30,19 +40,19 @@ header a {
 header ul {
   list-style: none;
   display: flex;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-family: dancing script, sans-serif;
 }
 
 header ul li {
   margin-right: 2rem;
   padding-right: 1rem;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 .page-logo {
-  font-size: 3rem;
-  margin-left: 3rem;
+  font-size: 1.7rem;
+  margin-left: 5rem;
   font-weight: 700;
   font-family: roboto slab, sans-serif;
 }
@@ -256,7 +266,7 @@ footer {
   font-size: 1.5rem;
 }
 
-@media screen and (max-width: 1950px) {
+/* @media screen and (max-width: 1950px) {
   body {
     width: 100%;
   }
@@ -305,7 +315,7 @@ footer {
   .contact-details-footer p {
     font-size: 1rem;
   }
-}
+} */
 
 @media (max-width: 768px) {
   body {
@@ -316,39 +326,40 @@ footer {
     position: fixed;
   }
   .page-logo {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    width: 70%;
+    margin:0;
+    padding-left: 0.5rem;
+    justify-content: center;
   }
   header ul li {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .last-menu-btn {
+    padding-right: 0.5rem;
   }
 
-  .first-section h1 {
+  #highlights-ul {
+    /* flex-direction: column; */
+  }
+  #highlights h2 {
     font-size: 3rem;
+    margin: 1rem auto;
   }
-  .first-section h2 {
-    font-size: 1.7rem;
+  .highlights img {
+    height: 300px;
   }
-  .first-section p{
-    font-size: 1.2rem;
+  #highlights-ul p {
+    font-size: 1rem;
   }
-
-  form {
-    width: 100%;
+  #highlights-ul {
+    flex-direction: column;
   }
-
-  form h2 {
-    font-size: 1.5rem;
+  #portfolio-link a {
+    font-size: 2rem;
   }
-  .inline-control, .inline-control input {
-    font-size: 1.5rem;
-  }
-  #contact-details h2 {
-    font-size: 1.5rem;
-  }
-  #contact-details h2 strong {
-    font-size: 1.5rem;
-  }
-
   .footer-btn {
     font-size: 1.2rem;
   }
@@ -356,6 +367,7 @@ footer {
     font-size: 1.2rem;
   }
 }
+
 @media (max-width: 375px) {
   body {
     width: 100%;
@@ -375,46 +387,6 @@ footer {
     padding-bottom: 1rem;
     margin: auto;
   }
-
-  .first-section h1 {
-    font-size: 2.5rem;
-  }
-  .first-section h2 {
-    font-size: 1.5rem;
-  }
-  .first-section p{
-    font-size: 1rem;
-  }
-
-  form {
-    width: 100%;
-
-    font-size: 1rem;
-  }
-
-  form h2 {
-    font-size: 1.5rem;
-  }
-  .inline-control {
-    font-size: 1rem;
-  }
-  .inline-control input {
-    font-size: 1rem;
-  }
-  #contact-details h2 {
-    font-size: 1.5rem;
-  }
-  #contact-details h2 strong {
-    font-size: 1.5rem;
-  }
-
-  .btn {
-    padding: 1rem 2rem;
-    font-size: 1rem;
-  }
-
-
-
   #image-container {
     height: 50rem;
   }
@@ -425,14 +397,14 @@ footer {
     font-size: 2rem;
   }
   .affordable-photography h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-top: 1rem;
   }
   .affordable-photography p {
     font-size: 1rem;
   }
   #highlights-ul {
-    flex-direction: column;
+    /* flex-direction: column; */
   }
   #highlights h2 {
     font-size: 3rem;
@@ -445,7 +417,7 @@ footer {
     font-size: 1rem;
   }
   #portfolio-link a {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
   .footer-btn {
     font-size: 1rem;
@@ -454,5 +426,6 @@ footer {
   .contact-details-footer p {
     font-size: 1rem;
     margin: 0.4rem;
-  }
+  }  
 }
+
