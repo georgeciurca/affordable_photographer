@@ -82,21 +82,21 @@ main {
 
 .first-section h1 {
   font-family: var(--font-family-dancing);
-  font-size: 4rem;
+  font-size: 2.5rem;
   color: var(--red);
   margin: 2rem auto;
 }
 
 .first-section h2 {
   font-family: var(--font-family-roboto);
-  font-size: 2.5rem;
+  font-size: 1.7rem;
   color: var(--dark);
   margin: 1rem auto;
 }
 
 .first-section p {
   font-family: var(--font-family-roboto);
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   margin: 2rem auto;
 }
 .br-line {
@@ -112,7 +112,7 @@ main {
 
 form {
   box-sizing: border-box;
-  width: 60rem;
+  width: 60%;
   margin: 0 auto;
   padding: 1rem;
   box-shadow: 0 2px 8px var(--dark);
@@ -130,7 +130,7 @@ label {
   display: block;
   margin-bottom: 0.5rem;
   font-family: var(--font-family-roboto);
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   padding-top: 1.5rem;
 }
 
@@ -150,7 +150,7 @@ textarea {
 }
 
 #find-us {
-  font-size: 1.7rem;
+  font-size: 1.2rem;
 }
 input:focus,
 textarea:focus {
@@ -174,7 +174,7 @@ textarea:focus {
 }
 
 form h2 {
-  font-size: 2.5rem;
+  font-size: 1.7rem;
   text-align: center;
   color: var(--red);
   font-family: var(--font-family-roboto);
@@ -186,10 +186,10 @@ form h2 {
 }
 .btn {
   font-family: var(--font-family-roboto);
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   font-weight: 700;
   border-radius: 8px;
-  padding: 0.5rem 13rem;
+  padding: 0.5rem 3rem;
   border-radius: 4px;
   cursor: pointer;
   background-color:var(--light-blue);
@@ -213,17 +213,17 @@ footer {
 }
 
 #contact-details h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: var(--font-family-roboto);
 }
 #contact-details h3 {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-family: var(--font-family-roboto);
   padding: 2rem 0;
 }
 #contact-details h2 strong {
   color: var(--red);
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 #contact-details h3 strong {
   color: var(--red);
@@ -242,7 +242,7 @@ footer {
 }
 
 .footer-btn {
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   font-family: var(--font-family-roboto);
   text-decoration: none;
   color: var(--blue);
@@ -263,161 +263,87 @@ footer {
 .contact-details-footer p {
   margin: 1rem;
   font-family: var(--font-family-roboto);
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
-/* @media screen and (max-width: 1950px) {
-  body {
-    width: 100%;
-  }
-  header {
-    width: 100%;
-    position: fixed;
-    margin: auto;
-  }
+
+@media (min-width: 768px) and (max-width: 1300px) {
   .page-logo {
-    font-size: 1.2rem;
+    font-size: 2rem;
+    padding-bottom: 1rem;
   }
   header ul li {
-    font-size: 1.1rem;
-  }
-
-  .first-section h1 {
-    font-size: 2.5rem;
-  }
-  .first-section h2 {
-    font-size: 1.5rem;
-  }
-  .first-section p{
-    font-size: 1rem;
-  }
-
-  form {
-    width: 100%;
-  }
-
-  form h2 {
-    font-size: 1.2rem;
-  }
-  .inline-control, .inline-control input {
-    font-size: 1.2rem;
-  }
-  #contact-details h2 {
-    font-size: 1.7rem;
-  }
-  #contact-details h2 strong {
-    font-size: 1.5rem;
-  }
-
-  .footer-btn {
-    font-size: 1rem;
-  }
-  .contact-details-footer p {
-    font-size: 1rem;
-  }
-} */
-
-@media (max-width: 768px) {
-  body {
-    width: 100%;
-  }
-  header {
-    width: 100%;
-    position: fixed;
-  }
-  .page-logo {
-    font-size: 1rem;
-    width: 70%;
-    margin:0;
-    padding-left: 0.5rem;
-    justify-content: center;
-  }
-  header ul li {
-    font-size: 1rem;
-    margin-right: 0.5rem;
-    padding-right: 0.5rem;
-  }
-  .last-menu-btn {
-    padding-right: 0.5rem;
-  }
-
-  #highlights-ul {
-    /* flex-direction: column; */
-  }
-  #highlights h2 {
-    font-size: 3rem;
-    margin: 1rem auto;
-  }
-  .highlights img {
-    height: 300px;
-  }
-  #highlights-ul p {
-    font-size: 1rem;
-  }
-  #highlights-ul {
-    flex-direction: column;
-  }
-  #portfolio-link a {
     font-size: 2rem;
   }
-  .footer-btn {
-    font-size: 1.2rem;
+  header {
+    width: 100%;
+    height: 7rem;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
-  .contact-details-footer p {
-    font-size: 1.2rem;
+  #highlights-ul {
+    flex-direction: column;
   }
+
 }
 
-@media (max-width: 375px) {
+@media (min-width: 450px) and (max-width: 768px) {
   body {
     width: 100%;
   }
   header {
     width: 100%;
     position: fixed;
+    display: flex;
     flex-direction: column;
     justify-content: center;
   }
   .page-logo {
-    font-size: 1.2rem;
-    margin: auto;
+    font-size: 1.7rem;
+    margin: 0 auto;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
   }
   header ul li {
-    font-size: 0.7rem;
-    padding-bottom: 1rem;
-    margin: auto;
+    font-size: 1.5rem;
+    padding-bottom: 3rem;
+    margin: 0 auto;
   }
   #image-container {
-    height: 50rem;
+    height: 100%;
   }
   .image-container-text h1 {
-    font-size: 4rem;
+    font-size: 2rem;
   }
   .image-container-text h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .affordable-photography h3 {
-    font-size: 2rem;
+    font-size: 1.2rem;
     margin-top: 1rem;
   }
   .affordable-photography p {
     font-size: 1rem;
   }
   #highlights-ul {
-    /* flex-direction: column; */
+    flex-direction: column;
   }
   #highlights h2 {
-    font-size: 3rem;
+    font-size: 1.5rem;
     margin: 1rem auto;
   }
   .highlights img {
-    height: 200px;
+    height: 100%;
+    margin: auto;
   }
   #highlights-ul p {
     font-size: 1rem;
+    padding-bottom: 2rem;
   }
   #portfolio-link a {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
   .footer-btn {
     font-size: 1rem;
@@ -429,3 +355,53 @@ footer {
   }  
 }
 
+@media (max-width: 450px) {
+  body {
+    width: 100%;
+  }
+  header {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .page-logo {
+    font-size: 1.2rem;
+    margin: 0 auto;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+  header ul li {
+    font-size: 1rem;
+    padding-bottom: 2rem;
+    margin: 0 auto;
+  }
+  #image-container {
+    height: 100%;
+  }
+  .image-container-text h1 {
+    font-size: 2rem;
+  }
+  .image-container-text h2 {
+    font-size: 1.5rem;
+  }
+  .affordable-photography h3 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  .affordable-photography p {
+    font-size: 1rem;
+  }
+  #highlights-ul {
+    flex-direction: column;
+  
+  }
+  #highlights h2 {
+    font-size: 1.5rem;
+    margin: 1rem auto;
+  }
+  .highlights img {
+    max-width: 250px;
+  }
+  }
