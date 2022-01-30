@@ -251,11 +251,15 @@ footer {
 
 @media (min-width: 768px) and (max-width: 1300px) {
   .page-logo {
-    font-size: 2rem;
+    font-size: 1.7rem;
+    margin: 0 auto;
+    padding-top: 2rem;
     padding-bottom: 1rem;
   }
   header ul li {
-    font-size: 2rem;
+    font-size: 1.3rem;
+    padding-bottom: 3rem;
+    margin: 0 auto;
   }
   .packages-container {
     width: 100%;
