@@ -23,6 +23,11 @@ header {
   width: 100%;
 }
 
+/* body {
+  position: relative;
+  width: 100%;
+} */
+
 header a {
   text-decoration: none;
   color: black;
@@ -188,6 +193,7 @@ main {
 footer {
   background-color: var(--dark);
   height: 100%;
+  max-width: 100%;
 }
 
 .footerul {
@@ -224,6 +230,24 @@ footer {
   font-family: var(--font-family-roboto);
   font-size: 1.2rem;
 }
+
+
+#highlights-ul p {
+  font-size: 1rem;
+  padding-bottom: 2rem;
+}
+#portfolio-link a {
+  font-size: 1.5rem;
+}
+.footer-btn {
+  font-size: 1rem;
+  margin: 0.4rem;
+}
+.contact-details-footer p {
+  font-size: 1rem;
+  margin: 0.4rem;
+}  
+
 
 @media (min-width: 768px) and (max-width: 1300px) {
   .page-logo {
@@ -268,7 +292,7 @@ footer {
     padding-bottom: 1rem;
   }
   header ul li {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding-bottom: 3rem;
     margin: 0 auto;
   }
@@ -331,6 +355,11 @@ footer {
     font-size: 1rem;
     margin: 0.4rem;
   }  
+  .br-line {
+    width: 80%;
+    margin: 2rem auto;
+    border-top: 1px blue solid;
+  }
 }
 
 @media (max-width: 450px) {
@@ -399,5 +428,10 @@ footer {
   }
   .highlights img {
     max-width: 250px;
+  }
+  .br-line {
+    width: 80%;
+    margin: 2rem auto;
+    border-top: 1px blue solid;
   }
   }

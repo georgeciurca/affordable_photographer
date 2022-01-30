@@ -267,6 +267,24 @@ footer {
 }
 
 
+#highlights-ul p {
+  font-size: 1rem;
+  padding-bottom: 2rem;
+}
+#portfolio-link a {
+  font-size: 1.5rem;
+}
+.footer-btn {
+  font-size: 1rem;
+  margin: 0.4rem;
+}
+.contact-details-footer p {
+  font-size: 1rem;
+  margin: 0.4rem;
+}  
+
+
+
 @media (min-width: 768px) and (max-width: 1300px) {
   .page-logo {
     font-size: 2rem;
@@ -307,7 +325,7 @@ footer {
     padding-bottom: 1rem;
   }
   header ul li {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding-bottom: 3rem;
     margin: 0 auto;
   }
@@ -353,6 +371,11 @@ footer {
     font-size: 1rem;
     margin: 0.4rem;
   }  
+  .br-line {
+    width: 80%;
+    margin: 2rem auto;
+    border-top: 1px blue solid;
+  }
 }
 
 @media (max-width: 450px) {
@@ -371,6 +394,23 @@ footer {
     margin: 0 auto;
     padding-top: 2rem;
     padding-bottom: 1rem;
+  }
+  form {
+    box-sizing: border-box;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+    box-shadow: 0 2px 8px var(--dark);
+    background-color:var(--blue);
+    border-radius: 6px;
+    font-family: var(--font-family-roboto);
+  }
+  form h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--red);
+    font-family: var(--font-family-roboto);
+    padding-top: 2rem;
   }
   header ul li {
     font-size: 1rem;
@@ -403,5 +443,13 @@ footer {
   }
   .highlights img {
     max-width: 250px;
+  }
+  #portfolio-link a {  
+    padding: 0rem;
+  }
+  .br-line {
+    width: 80%;
+    margin: 2rem auto;
+    border-top: 1px blue solid;
   }
   }
